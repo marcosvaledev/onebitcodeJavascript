@@ -1,13 +1,12 @@
 let check = true;
-
 do {
 let verificarOperador = prompt('what operation do you want calulate\n'+
-                                   '+ for adition\n'+
-                                   '- for subtration\n' +
-                                   '* for multiplication\n' +
-                                   'sair for exit');
+    '+ for adition\n'+
+    '- for subtration\n' +
+    '* for multiplication\n' +
+    'sair for exit');
 
-if (verificarOperador.toLowerCase() === 'sair') {
+if (verificarOperador.toLocaleLowerCase() === 'sair') {
     check = false;
     break;
 }
@@ -27,18 +26,15 @@ function multipli(value1, value2){
 } let resultMultipli = multipli(value1, value2);
 
 // the conditionals
-if (verificarOperador === '+'){
+if (verificarOperador === String.fromCharCode(43)){
     alert('o resultado da soma é : ' + resultSoma.toFixed(1) );
-}
-else if (verificarOperador === '-'){ {
+}else if (verificarOperador === String.fromCharCode(45)){ 
     alert('o resultado da subtração é : ' + resultSubtrai.toFixed(1) )
-}
-}else if(verificarOperador === '*') {
+}else if (verificarOperador === String.fromCharCode(42)) {
     alert('o resultado da multiplication é : ' + resultMultipli.toFixed(1) )
 }else if (verificarOperador != '+' && '-' && '*' && 'sair' ){
     alert('operation invalid')
-}
-
-} while(check);
+}} 
+while (check);
 
 
