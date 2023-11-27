@@ -7,15 +7,19 @@ let value2 = Number(prompt('What other number?'));
 
 function soma(value1, value2){
     return value1 + value2;
-} let resultSoma = soma(value1, value2)
+} let resultSoma = soma(value1, value2);
 
 function subtrai(value1, value2){
     return value1 - value2;
-} let resultSubtrai = soma(value1, value2)
+} let resultSubtrai = subtrai(value1, value2);
 
-
-
-
+if (verificarOperador === '+'){
+    alert('o resultado da soma é : ' + resultSoma.toFixed(1) );
+}
+else{if (verificarOperador === '-') {
+    alert('o resultado da subtração é : ' + resultSubtrai.toFixed(1) )
+}
+}
 
 
 
